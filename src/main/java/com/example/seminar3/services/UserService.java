@@ -12,7 +12,7 @@ public class UserService {
     }
 
     public User createUser(User user) {
-        notification.notifyUser(user);
+        notification.notifyUser(user, "User is created!" + user);
 
         return user;
     }

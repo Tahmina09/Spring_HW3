@@ -6,8 +6,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class NotificationService {
 
-    public void notifyUser(User user) {
-        System.out.println("A new user is created " + user);
+    public void notifyUser(User user, String message) {
+        System.out.println(message + user);
     }
 
 

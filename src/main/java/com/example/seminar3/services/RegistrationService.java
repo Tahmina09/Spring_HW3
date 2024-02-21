@@ -41,5 +41,6 @@ public class RegistrationService {
 
     public void processRegistration(User user) {
         dataProcessingService.getRepository().getUsers().add(userService.createUser(user));
+        notificationService.notifyUser(user, "User added to DataBase.");
     }
 }
